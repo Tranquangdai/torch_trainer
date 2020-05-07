@@ -1,0 +1,31 @@
+import setuptools
+
+setuptools.setup(
+    name="torch_trainer",
+    version="0.1",
+    license="MIT",
+    author="dai.tran",
+    author_email="tranquangdai5@gmail.com",
+    description="A keras-like API for training Pytorch model",
+    long_description=open("README.md", "r").read(),
+    long_description_content_type="text/markdown",
+    url=None,
+    packages=setuptools.find_packages(),
+    install_requires=["torch>=1.3.0", "numpy>=1.18.3", "matplotlib>=3.2.1"],
+    python_requires=">=3.7",
+    classifiers=[
+        "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Developers",
+        "Operating System :: OS Independent",
+        "Topic :: Scientific/Engineering",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+    ],
+    keywords="pytorch keras",
+)
