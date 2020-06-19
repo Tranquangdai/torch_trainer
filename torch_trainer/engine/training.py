@@ -1,5 +1,4 @@
 import numpy as np
-
 import torch
 
 from ..callbacks import callbacks as cbks
@@ -258,6 +257,8 @@ class DeviceTransfer(object):
             for i, item in enumerate(data):
                 data[i] = item.cuda()
             return data
+        elif isinstance(data, torch.Tensor):
+            return data.cuda()
 
     def auto_transfer(self, data):
         if self.device == 'cpu':
